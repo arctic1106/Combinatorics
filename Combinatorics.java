@@ -19,8 +19,7 @@ public class Combinatorics {
 	}
 
 	public static BigInteger variacionesConRepeticion(int m, int n) {
-		BigInteger bigIntM = BigInteger.valueOf(m).pow(n);
-		return bigIntM;
+        return BigInteger.valueOf(m).pow(n);
 	}
 
 	private static BigInteger factorial(int n) {
