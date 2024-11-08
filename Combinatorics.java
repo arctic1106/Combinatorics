@@ -19,12 +19,14 @@ public class Combinatorics {
 	}
 
 	public static BigInteger variacionesConRepeticion(int m, int n) {
-        return BigInteger.valueOf(m).pow(n);
+		return BigInteger.valueOf(m).pow(n);
 	}
 
 	private static BigInteger factorial(int n) {
 		BigInteger factorial = BigInteger.ONE;
-		for (int i = 2; i <= n; i++) factorial = factorial.multiply(BigInteger.valueOf(i));
+		for (int i = 2; i <= n; i++) {
+			factorial = factorial.multiply(BigInteger.valueOf(i));
+		}
 		return factorial;
 	}
 }
