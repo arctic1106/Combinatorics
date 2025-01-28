@@ -23,8 +23,8 @@ public class Combinatorics {
 	}
 
 	private static BigInteger factorial(int n) {
-		BigInteger factorial = BigInteger.ONE;
-		for (int i = 2; i <= n; i++) {
+		var factorial = BigInteger.ONE;
+		for (var i = 2; i <= n; i++) {
 			factorial = factorial.multiply(BigInteger.valueOf(i));
 		}
 		return factorial;
